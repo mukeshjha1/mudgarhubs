@@ -2,7 +2,8 @@ import { useState, useEffect } from 'react'
 import ProductCard from '../components/ProductCard'
 import './Shop.css'
 
-const API_URL = 'http://localhost:5000'
+//const API_URL = 'http://localhost:5000'
+const API_URL = 'https://mudgarhub-api.onrender.com'
 
 export default function Shop() {
     const [products, setProducts] = useState([])

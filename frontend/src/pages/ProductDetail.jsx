@@ -3,7 +3,8 @@ import { useParams, Link } from 'react-router-dom'
 import { useCart } from '../context/CartContext'
 import './ProductDetail.css'
 
-const API_URL = 'http://localhost:5000'
+//const API_URL = 'http://localhost:5000'
+const API_URL = 'https://mudgarhub-api.onrender.com'
 
 export default function ProductDetail() {
     const { id } = useParams()

@@ -2,7 +2,8 @@ import { Link } from 'react-router-dom'
 import { useCart } from '../context/CartContext'
 import './Cart.css'
 
-const API_URL = 'http://localhost:5000'
+//const API_URL = 'http://localhost:5000'
+const API_URL = 'https://mudgarhub-api.onrender.com'
 
 const getImageUrl = (image) => {
     if (!image) return 'https://via.placeholder.com/100x100?text=🏋️'
