@@ -9,7 +9,7 @@ export default function ProductCard({ product }) {
     const { addToCart } = useCart()
 
     const imageUrl = product.images?.[0]
-        ? (product.images[0].startsWith('/uploads') ? + product.images[0] : product.images[0])
+        ? (product.images[0].startsWith('/uploads') ? API_URL + product.images[0] : product.images[0])
         : 'https://via.placeholder.com/300x300?text=🏋️'
 
     return (
