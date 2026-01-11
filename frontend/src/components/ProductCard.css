@@ -1,0 +1,138 @@
+.product-card {
+    background: #fff;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    transition: 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+}
+
+.product-image {
+    display: block;
+    position: relative;
+    padding-top: 100%;
+    background: #f5f0eb;
+}
+
+.product-image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.stock-badge {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background: #dcfce7;
+    color: #16a34a;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+.workout-badge {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: #fef3c7;
+    color: #d97706;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+.product-info {
+    padding: 20px;
+}
+
+.product-info h3 {
+    font-size: 1.1rem;
+    color: #2d1810;
+    margin-bottom: 5px;
+    line-height: 1.4;
+}
+
+.product-weight {
+    color: #8b4513;
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}
+
+.product-price {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.price,
+.sale-price {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #2d1810;
+}
+
+.original-price {
+    color: #999;
+    text-decoration: line-through;
+    font-size: 1rem;
+}
+
+.add-to-cart-btn {
+    width: 100%;
+    padding: 14px;
+    background: #d2691e;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+    min-height: 48px;
+}
+
+.add-to-cart-btn:hover {
+    background: #8b4513;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .product-card {
+        border-radius: 12px;
+    }
+
+    .product-info {
+        padding: 15px;
+    }
+
+    .product-info h3 {
+        font-size: 1rem;
+    }
+
+    .price,
+    .sale-price {
+        font-size: 1.15rem;
+    }
+
+    .add-to-cart-btn {
+        padding: 12px;
+        font-size: 0.95rem;
+    }
+
+    .stock-badge,
+    .workout-badge {
+        padding: 5px 10px;
+        font-size: 0.7rem;
+    }
+}
