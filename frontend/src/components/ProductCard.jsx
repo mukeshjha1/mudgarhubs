@@ -16,10 +16,12 @@ export default function ProductCard({ product }) {
         <div className="product-card">
             <Link to={`/product/${product._id}`} className="product-image">
                 <img src={imageUrl} alt={product.name} />
-                {product.inStock && <span className="stock-badge">✅ In Stock</span>}
                 {product.freeWorkout && <span className="workout-badge">🎥 Free Workout</span>}
             </Link>
             <div className="product-info">
+                <div className="badges-row">
+                    {product.inStock && <span className="stock-badge">✅ In Stock</span>}
+                </div>
                 <h3>{product.name}</h3>
                 <p className="product-weight">{product.weight}</p>
                 <div className="product-price">
