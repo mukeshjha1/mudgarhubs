@@ -1,10 +1,13 @@
 .navbar {
-    position: sticky;
+    position: fixed;
     top: 0;
+    left: 0;
+    right: 0;
     background: #2d1810;
     padding: 15px 0;
     z-index: 1000;
     width: 100%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
 }
 
 .nav-container {
